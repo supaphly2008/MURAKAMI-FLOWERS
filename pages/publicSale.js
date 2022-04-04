@@ -48,6 +48,7 @@ const PublicSale = () => {
     } catch (err) {
       console.log("💩 Error claiming NFT: ", err);
       toast.error(ERROR_CODE[err.code] || "Something went wrong!", {
+        duration: 5000,
         style: {
           background: "white",
           color: "red",
