@@ -5,7 +5,7 @@ const Whitelist = () => {
       <p className="text-[24px] mb-[50px] sm:text-[20px]">If you already have Murakami.Flowers seed, Please confirm your seed at the address below.</p>
       <div className="mx-auto mt-0 max-w-[600px]">
         <video className="w-full" autoPlay muted>
-          <source src="https://presale.kaikaikiki.com/video/Seed_FIX_SE_1280px.mp4" type="video/mp4" />
+          <source src="/flower.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
