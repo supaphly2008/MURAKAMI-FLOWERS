@@ -32,7 +32,7 @@ export default function Home() {
       <footer className="fixed bottom-0 h-[80px] sm:h-[64px] bg-footer--gray w-full px-[30px] py-[10px] sm:px-[10px] text-[30px] font-[500]">
         <div className="max-w-[830px] mx-auto my-0 flex flex-1">
           <Button onClick={() => onButtonClick("/whitelist")} text="Presale for Whitelist" />
-          <Button onClick={() => onButtonClick("/public")} text="Public Sale" />
+          <Button onClick={() => onButtonClick("/publicSale")} text="Public Sale" />
         </div>
       </footer>
     </div>
