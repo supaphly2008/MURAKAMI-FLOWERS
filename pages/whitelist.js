@@ -1,4 +1,4 @@
-const whitelist = () => {
+const Whitelist = () => {
   return (
     <div className="pt-[60px] pb-[90px] px-[50px] text-center">
       <h1 className="text-[50px] font-[500] mb-[56px] sm:text-[24px] sm:mb-[36px]">Presale for Whitelist was ended.</h1>
@@ -16,4 +16,4 @@ const whitelist = () => {
   );
 };
 
-export default whitelist;
+export default Whitelist;
