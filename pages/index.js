@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 const Button = ({ text }) => {
-  return <div className="h-[60px] cursor-pointer bg-black rounded-full flex items-center justify-center w-1/2 mx-[7.5px]">{text}</div>;
+  return <div className="h-[60px] hover:bg-[#3E3E3E] transition duration-500 ease-in cursor-pointer bg-black rounded-full flex items-center justify-center w-1/2 mx-[7.5px]">{text}</div>;
 };
 
 export default function Home() {
