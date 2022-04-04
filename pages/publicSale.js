@@ -24,7 +24,10 @@ const PublicSale = () => {
       </header>
       {address && (
         <div className="text-center">
-          You&apos;re connected to wallet {address.substring(0, 5)}...{address.substring(address.length - 5)}
+          You&apos;re connected to wallet{" "}
+          <span className="font-[700] text-[18px]">
+            {address.substring(0, 5)}...{address.substring(address.length - 5)}
+          </span>
         </div>
       )}
       <div className="mx-auto mt-[50px] max-w-[300px]">
@@ -39,7 +42,7 @@ const PublicSale = () => {
         <div>124 / 1000 Minted</div>
       </div>
       <div className="flex justify-center mt-[30px]">
-        <div className="px-[20px] font-[500] cursor-pointer h-[40px] bg-white text-black rounded-full text-[24px] min-w-[120px] flex items-center justify-center" onClick={mintNft}>
+        <div className="px-[20px] font-[700] cursor-pointer h-[40px] bg-white text-black rounded-full text-[24px] min-w-[120px] flex items-center justify-center" onClick={mintNft}>
           MINT
         </div>
       </div>
