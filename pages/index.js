@@ -1,10 +1,21 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
-const Button = ({ text }) => {
-  return <div className="h-[60px] hover:bg-[#3E3E3E] transition duration-500 ease-in cursor-pointer bg-black rounded-full flex items-center justify-center w-1/2 mx-[7.5px]">{text}</div>;
+const Button = ({ text, onClick }) => {
+  return (
+    <div onClick={onClick} className="h-[60px] hover:bg-[#3E3E3E] transition duration-500 ease-in cursor-pointer bg-black rounded-full flex items-center justify-center w-1/2 mx-[7.5px]">
+      {text}
+    </div>
+  );
 };
 
 export default function Home() {
+  const router = useRouter();
+
+  const onButtonClick = (route) => {
+    router.push(route);
+  };
+
   return (
     <div className="h-full">
       <Head>
@@ -20,8 +31,8 @@ export default function Home() {
       </div>
       <footer className="fixed bottom-0 h-[80px] bg-footer--gray w-full px-[30px] py-[10px] text-[30px] font-[500]">
         <div className="max-w-[830px] mx-auto my-0 flex flex-1">
-          <Button text="Presale for Whitelist" />
-          <Button text="Public Sale" />
+          <Button onClick={() => onButtonClick("/whitelist")} text="Presale for Whitelist" />
+          <Button onClick={() => onButtonClick("/public")} text="Public Sale" />
         </div>
       </footer>
     </div>
