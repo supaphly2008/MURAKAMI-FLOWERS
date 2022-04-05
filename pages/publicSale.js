@@ -80,18 +80,18 @@ const PublicSale = () => {
           </span>
         </div>
       )}
-      <div className="mx-auto mt-[50px] max-w-[300px]">
+      <div className="mx-auto mt-[30px] max-w-[300px]">
         <video className="w-full" autoPlay muted>
           <source src="/flower.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="text-center text-[40px] font-[700] mt-[50px] sm:text-[30px]">
+      <div className="text-center text-[40px] font-[700] mt-[30px] sm:text-[30px]">
         <div>Mint Price</div>
         <div>0.108 ETH / EACH</div>
         <div>641 / 1,000 Claimed</div>
       </div>
-      <div className="flex justify-center mt-[30px]">
+      <div className="flex justify-center mt-[15px]">
         <button disabled={!address || loading} className="px-[20px] disabled:bg-gray disabled:cursor-not-allowed font-[700] cursor-pointer h-[40px] bg-white text-black rounded-full text-[24px] min-w-[120px] flex items-center justify-center" onClick={mintNft}>
           {!address ? "Connect to Mint" : "MINT"}
         </button>
